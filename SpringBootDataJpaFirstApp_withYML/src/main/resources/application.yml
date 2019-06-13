@@ -1,0 +1,7 @@
+##server to see output on console using url which needs a port number which user knows
+##console enabled to see output on web browser console
+##show sql to see sql clause on console
+server:
+  port: 8888
+spring:  h2:    console:      enabled: true
+  jpa:    show-sql: true
