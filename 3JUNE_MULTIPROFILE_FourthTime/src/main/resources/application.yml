@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active:
+    - qa
+    
+my:
+  eid: 1
+  ename: default
+  esal: 3.3

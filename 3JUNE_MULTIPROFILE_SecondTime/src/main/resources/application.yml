@@ -1,0 +1,9 @@
+spring:  profiles:    active:    - dev
+---
+spring.profiles: dev
+
+my:
+  data:
+    eid: 2
+    ename: dev
+    esal: 3.3

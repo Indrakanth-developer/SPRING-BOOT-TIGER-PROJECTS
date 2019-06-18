@@ -1,0 +1,5 @@
+eid: 23
+ename: ${random.value}
+esal: ${random.int}
+elong: ${random.long(23,500)}
+uuid: ${eid}${ename}${random.uuid}

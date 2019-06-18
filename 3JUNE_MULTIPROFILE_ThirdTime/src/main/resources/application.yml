@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active:
+    - qa
+    - dev
+eid: 1
+ename: a
+esal: 1.1
+
+---
+
+spring.profiles: dev
+
+eid: 2
+ename: dev
+
+---
+spring.profiles: qa
+
+ename: qa
+esal: 3.3

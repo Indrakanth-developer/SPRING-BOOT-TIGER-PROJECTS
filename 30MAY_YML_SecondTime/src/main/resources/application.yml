@@ -1,0 +1,12 @@
+my:
+  val:
+    data:
+      eid: 32
+      ename: Kodi
+      esal: 34.54
+      arr:
+      - 32
+      - 45
+      prop:
+        s1: 45
+        s2: 54
