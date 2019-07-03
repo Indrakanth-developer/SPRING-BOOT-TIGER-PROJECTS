@@ -1,0 +1,29 @@
+#server
+server:
+  port: 2030
+  servlet:
+    context-path: /myproj
+    
+ #db
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+       hibernate:
+         dialect: org.hibernate.dialect.MySQL55Dialect
+
+
+
+##mvc
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+#debug: true  
