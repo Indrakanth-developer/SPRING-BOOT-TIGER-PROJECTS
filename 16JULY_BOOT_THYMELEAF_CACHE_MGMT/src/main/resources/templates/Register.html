@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Indra</title>
+</head>
+<body>
+
+<h2>Welcome to register</h2>
+
+<form th:action="@{/emp/save}" method="post" th:object="${employee}">
+<pre>
+NAME: <input type="text" th:field="*{ename}"/>
+SAL: <input type="text" th:field="*{esal}"/>
+<input type="submit">
+<span th:text="${message}"></span>
+</pre>
+
+</form>
+</body>
+</html>

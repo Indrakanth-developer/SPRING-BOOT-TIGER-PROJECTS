@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Indra</title>
+</head>
+<body>
+
+<h2>Welcome to data</h2>
+
+
+<table border=1>
+<tr>
+<th>ID</th>
+<th>NAME</th>
+<th>SAL</th>
+<th>OPERATIONS</th>
+</tr>
+<tr th:each="ob:${list}">
+<td th:text="${ob.eid}">
+<td th:text="${ob.ename}">
+<td th:text="${ob.esal}">
+<td><a th:href="@{/emp/view/{id} (id=${ob.eid})}">VIEW ME</a></td>
+<td><a th:href="@{/emp/view/{${ob.eid}}}">VIEW ME</a></td>
+</tr>
+</table>
+</body>
+</html>
